@@ -61,35 +61,3 @@ const tareaInput = document.querySelector("#nuevaTarea");
 
         tareaActual();
 
-
-/*
-function renderTareas() {
-    let html = "";
-    for (let tarea of tareas) {
-        html += `<li>${tarea.nombre} <button onclick="borrar(${tarea.id})">eliminar</button></li>`;
-    }
-    listaDeTareas.innerHTML = html;
-}
-
-function actualizarContador() {
-    contadorTareas.textContent = tareas.length;
-}
-
-btnAgregar.addEventListener("click", () => {
-    const nuevaTarea = { id: Date.now(), nombre: tareaInput.value };
-    tareas.push(nuevaTarea);
-    tareaInput.value = "";
-    renderTareas();
-    actualizarContador(); // Actualiza el contador después de agregar una tarea
-});
-
-function borrar(id) {
-    const index = tareas.findIndex((ele) => ele.id == id);
-    tareas.splice(index, 1);
-    renderTareas();
-    actualizarContador(); // Actualiza el contador después de eliminar una tarea
-}
-
-// Inicializa el contador en 0
-actualizarContador(); */
-
