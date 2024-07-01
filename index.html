@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
-    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div>
-            <input type="text" id="nuevaTarea">
-            <button id="agregarTarea">Agregar</button> 
-            <h3>Tareas: </h3> 
-            <ul id="tareas"></ul> 
+        <h1 class="my-4">To do list</h1>
+        
+        <div class="form-group">
+            <input type="text" id="nuevaTarea" class="form-control" placeholder="Nueva tarea">
+            <button id="agregarTarea" class="btn btn-primary mt-2">Agregar Tarea</button>
         </div>
-        <div>
-            <p id="contador"> </p>
-            <p id="realizadas"></p>
-        </div>
-
+        
+        <div id="contador" class="mb-2"></div>
+        <div id="realizadas" class="mb-4"></div>
+        
+        <ul id="tareas" class="list-group"></ul>
     </div>
     
     <script src="./assets/js/script.js"></script>
